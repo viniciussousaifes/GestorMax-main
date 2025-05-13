@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitações - Estoquista</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styleEstoqueEstoquista.css">
+</head>
+
+<body>
+
+  <div class="sidebar d-flex flex-column align-items-center">
+    <a href="../pages/homeEstoquista.html" class="nav-link">
+      <i class="bi bi-bar-chart-fill"></i><br>Dashboard
+    </a>
+    <a href="../pages/estoqueEstoquista.html" class="nav-link">
+      <i class="bi bi-box-seam"></i><br>Estoque
+    </a>
+    <a href="#" class="nav-link">
+      <i class="bi bi-check2-circle"></i><br>Solicitações
+    </a>
+  </div>
+
+  <div class="content">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="fs-6 text-muted"></div>
+      <div class="user-info">
+        <img src="https://via.placeholder.com/40" alt="Usuário">
+        <div class="text-end">
+          <strong>Usuário</strong><br>
+          <small class="text-muted">Estoquista</small>
+        </div>
+        <i class="bi bi-chevron-right" style="cursor: pointer;" onclick="location.href='../pages/index.html'"></i>
+      </div>
+    </div>
+
+    <section>
+      <h4 class="mt-4">Estoque</h4>
+
+      <div class="solicitacoes-top">
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar...">
+          <button class="btn btn-outline-secondary btn-sm">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <button class="add-request">
+          Incluir nova <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+
+      <table class="table table-bordered table-hover bg-white">
+        <thead class="table-light">
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>Produto</th>
+            <th>Categoria</th>
+            <th>Estante</th>
+            <th>Estoque</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Antipulgas</td>
+            <td>PetShop</td>
+            <td>1</td>
+            <td>5</td>
+            <td>Pendente</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Nome</td>
+            <td>X</td>
+            <td>Y</td>
+            <td>Z</td>
+            <td>Z</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>Nome</td>
+            <td>X</td>
+            <td>Y</td>
+            <td>Z</td>
+            <td>Z</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+</body>
+
+</html>
